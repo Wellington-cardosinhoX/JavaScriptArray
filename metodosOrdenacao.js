@@ -15,4 +15,29 @@ let mesclaArray = letras.concat(numeros) // concatena as listas
 console.log(mesclaArray)
 
 
+// let frutas = ["maçã", "uva", "laranja"];
+
+// console.log(frutas.indexOf("uva"));
+
+// console.log(frutas.splice(0, 1))
+
+// console.log(frutas.splice(0, 1, 10))
+
+
+// console.log(frutas)
+
+
+
+let frutas = ["maçã", "banana", "manga"];
+
+console.log(frutas.includes("banana"))
+console.log(frutas.includes(45))
+
+console.log(frutas.every(function(fruta) {
+    return fruta.includes("m")
+})) 
+
+
+
+console.log(frutas.join(" - "))
 
