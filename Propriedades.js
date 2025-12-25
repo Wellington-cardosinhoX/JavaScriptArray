@@ -97,3 +97,32 @@ calculadora.exponenciacao = function() {
 }
 
 console.log(calculadora.exponenciacao())
+
+console.log("=========================================")
+
+// Exercicio
+
+const venda = {
+    produto: "TV",
+    quantidade: 2,
+    precoUnitario: 1500,
+    desconto: 20,
+
+    calcularTotal: function() {
+       const total =  this.quantidade * this.precoUnitario;
+        return total - (total * (this.desconto / 100)) // Desconto em porcentagem
+    },
+
+    exibirDetalhes: function() {
+        return `Produto: ${this.produto}`
+    }
+}
+
+console.log(`O total com o desconto é de: ${venda.calcularTotal()}`)
+
+venda.aplicarDesconto = function(percentual) {
+    this.desconto = percentual;
+}
+
+venda.aplicarDesconto(10);
+console.log(`O desconto foi de: ${venda.desconto}, a Venda ${venda.exibirDetalhes()}`)
